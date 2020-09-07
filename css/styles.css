@@ -1,0 +1,261 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.background {
+    background-color: black;
+    /*cursor: crosshair;*/
+}
+
+.background-image {
+    background-image: url("../img/portada2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0, 0.4);
+    filter: blur(5px);
+    height: 100%;
+    width:100%;
+    position:fixed;
+}
+
+.buttonmenu {
+    width:80%;
+    height: 10%;
+    margin-bottom:3%;
+    background-color: blanchedalmond;
+    color:white;
+    transition: width 0.3s;
+    transition: height 0.1s;
+
+}
+
+.divmenuright {
+    width:100%;
+    height: 98%;
+    background-color: blanchedalmond;
+    color:white;
+    transition: width 0.3s;
+    transition: height 0.1s;
+    transform: rotate(-5deg);
+    right:0%;
+}
+
+.divmenusecondright  {
+    width:100%;
+    height: 100%;
+    background-color: rgb(128, 11, 0);
+    transition: width 0.3s;
+    position: relative;
+    transform: rotate(5deg);
+    right:0%;
+}
+
+.animationini {
+    animation-name: appear;
+    animation-duration: 0.3s;
+    position: relative;
+}
+@keyframes appear {
+    from {left:-100%;}
+    to {left:0%;}
+  }
+
+.animationiniright {
+    animation-name: appearright;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes appearright {
+    from {right:-100%;}
+    to {right:0%;}
+  }
+
+.buttonmenusecond  {
+    width:100%;
+    height: 100%;
+    background-color: rgb(128, 11, 0);
+    transition: width 0.3s;
+    position: relative;
+    transform: rotate(8deg);
+    left:10%;
+    top:0%;
+}
+
+.buttonmenu:hover  {
+    animation-name: movementbutton;
+    animation-duration: 0.80s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movementbutton {
+    0%   {width:80%; height:10%;}
+    50%  {width:83%; height:11%; transform: rotate(-1.5deg);}
+    100% {width:80%; height:10%;}
+  }
+
+.sizecomplete {
+    position:fixed;
+    height:100%;
+    width:100%;
+    display: inline-flex;
+}
+
+.sizeleft {
+    padding: 1% 0%;
+    width:30%;
+    overflow:scroll;
+    overflow-x:hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sizeleft::-webkit-scrollbar {
+    display: none;
+}
+
+.sizerightbig {
+    padding: 1% 0%;
+    width:100%;
+}
+
+.textbutton {
+    text-align:center;
+    margin:auto;
+    width:100%;
+    max-height:100%;
+    font-size:16px;
+    font-size:2vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.videoinsidecontainer{
+    width: 100%;
+    height: 100%;
+
+}
+
+.videoinsidedivcontainer{
+    margin:5%;
+    height: 60%;   
+}
+
+.imageinsidedivcontainer{
+    margin:5%;
+    display:flex;
+}
+
+.textinsidecontainer{
+    text-align:center;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    max-width:80%;
+}
+.textinsidecontainerimage{
+    text-align:center;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    max-width:80%;
+}
+
+p{
+    font-size:2vmin;
+}
+h1{
+    font-size:2.5rem;
+}
+h3{
+    font-size:2.25rem;
+}
+
+.contentrightinside {
+    overflow:scroll;
+    overflow-x:hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    width:80%;
+    height: 100%;
+    background-color:black;
+    margin:auto;    
+}
+
+.contentrightinside::-webkit-scrollbar {
+    display: none;
+} 
+
+.imageinsidecontainer {
+    margin: auto;
+    display:block;
+    height: auto;
+
+}
+.imageinsidecontainerleft {
+    margin: auto;
+    height: auto;
+    position:relative;
+    left:0%;
+    max-width:45%;
+
+}
+.imageinsidecontainerright {
+    margin: auto;
+    height: auto;
+    position:relative;
+    right:0%;
+    max-width:45%;
+
+}
+.buttonnavbar{
+  left:0%;
+}
+.hiddenbtnmenu{
+        font-size: 2.5vw;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        margin: 1%;
+        border: none;
+}
+.animationmenunavbar{
+    animation-name: animanimationmenunavbar;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes animanimationmenunavbar {
+    0% {left:100%;}
+    100%   {left:0%;}
+  }
+
+.animationiniopen {
+    animation-name: openanimation;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes openanimation {
+    0%   {margin-right:-30%; left:-30%;}
+    100% {margin-right:0%; left:0%;}
+  }
+
+.animationiniclose {
+    animation-name: closeanimation;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes closeanimation {
+    0% {margin-right:0%; left:0%;}
+    100%   {margin-right:-30%; left:-30%;}
+  }
